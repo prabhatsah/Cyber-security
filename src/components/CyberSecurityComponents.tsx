@@ -168,8 +168,11 @@ export default function CyberSecurityComponents() {
   const [selectedAgent, setSelectedAgent] = useState<AIAgent | null>(null);
   const [schedules, setSchedules] = useState<ScanSchedule[]>([]);
   const [showScheduleForm, setShowScheduleForm] = useState(false);
-  const [newSchedule, setNewSchedule] = useState({
-    frequency: 'once' as const,
+  const [newSchedule, setNewSchedule] = useState<{
+    frequency: 'once' | 'daily' | 'weekly' | 'monthly';
+    nextRun: Date;
+  }>({
+    frequency: 'once',
     nextRun: new Date()
   });
 
@@ -210,7 +213,7 @@ export default function CyberSecurityComponents() {
                   <agent.icon className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-gray-900">{agent.name}</h3>
+                  <h3 className="text-lg font-medium text-primary">{agent.name}</h3>
                   <p className="text-sm text-gray-500">{agent.role}</p>
                 </div>
               </div>

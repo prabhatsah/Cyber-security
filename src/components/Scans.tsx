@@ -54,7 +54,7 @@ export function Scans() {
     <div>
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-2xl font-semibold text-gray-900">Security Scans</h1>
+          <h1 className=" font-semibold text-primary">Security Scans</h1>
           <p className="mt-1 text-sm text-gray-500">
             Manage security assessments with specialized AI agents
           </p>
@@ -62,28 +62,28 @@ export function Scans() {
         <div className="flex space-x-3">
           <button
             onClick={() => setShowAssetUpload(true)}
-            className="btn-secondary"
+            className="btn-primary"
           >
             <Upload className="h-4 w-4 mr-2" />
             Import Assets
           </button>
           <button
             onClick={() => setShowComplianceScan(true)}
-            className="btn-secondary"
+            className="btn-primary"
           >
             <Book className="h-4 w-4 mr-2" />
             Compliance Scan
           </button>
           <button
             onClick={() => setShowPortScan(true)}
-            className="btn-secondary"
+            className="btn-primary"
           >
             <Network className="h-4 w-4 mr-2" />
             Port Scan
           </button>
           <button
             onClick={() => setShowQuickScan(true)}
-            className="btn-secondary"
+            className="btn-primary"
           >
             <Shield className="h-4 w-4 mr-2" />
             Quick Scan
@@ -120,13 +120,13 @@ export function Scans() {
       </div>
       {activeTab === 'cyberSecurity' ? (<div>
             {/* Specialized AI Agents */}
-            <h2 className="text-lg font-medium text-gray-900 mb-4">Specialized AI Security Agents</h2>
+            <h2 className="text-lg  text-primary mb-4">Specialized AI Security Agents</h2>
             <CyberSecurityComponents />
           </div>)
       : (
           <div>
             {/* Specialized AI Agents */}
-            <h2 className="text-lg font-medium text-gray-900 mb-4">Specialized AI Security Agents</h2>
+            <h2 className="text-lg  text-primary mb-4">Specialized AI Security Agents</h2>
             <SpecializedAIAgents />
           </div>
         )}
