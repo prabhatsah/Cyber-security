@@ -138,7 +138,7 @@ export default function SpecializedAIAgents() {
                   <agent.icon className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-gray-900">{agent.name}</h3>
+                  <h3 className="text-lg font-medium text-primary">{agent.name}</h3>
                   <p className="text-sm text-gray-500">{agent.role}</p>
                 </div>
               </div>

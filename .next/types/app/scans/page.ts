@@ -1,4 +1,4 @@
-// File: D:\Keross Project\Cyber Security\Cyber-security\src\app\scans\page.tsx
+// File: C:\Cyber\Cyber-security\src\app\scans\page.tsx
 import * as entry from '../../../../src/app/scans/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

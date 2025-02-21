@@ -219,7 +219,7 @@ export default function ComplianceScanModal({ onClose, onScanComplete }: Complia
 
         <div className="space-y-6">
           <div>
-            <h3 className="text-lg font-medium text-gray-900 mb-4">
+            <h3 className="text-lg font-medium text-primary mb-4">
               Specialized Compliance AI Agents
             </h3>
             <ComplianceAIAgents />
